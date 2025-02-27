@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contacts </title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -12,21 +13,17 @@
             <!-- Navigation link to the home page -->
             <a href="../index.html">Home</a>
             <a href="../projects/index.html">Projects</a>
-            <a href="index.html">Contacts</a>
+            <a href="index.html" class="current">Contacts</a>
             <a href="../resume/index.html">Resume</a>
-            <a href="https://github.com/gtironi/dataviz_01" target="_blank">Repositorio</a>
+            <a href="https://github.com/gtironi/dataviz_01" target="_blank">Github</a>
         </nav>
 
         <!-- Forms: -->
         <form action="mailto:b51083@fgv.edu.br" method="get">
-            <label for="email">Email:</label><br>
-            <input type="email" name="email"><br>
-            <label for="subject">Subject:</label><br>
-            <input type="text" name="subject"><br>
-            <label for="subject">Body:</label><br>
-            <textarea name="body"></textarea><br>
+            <label for="email">Email: <input id="email" type="email" name="text_email"> </label>
+            <label for="subject">Subject: <input id="subject" type="text" name="text_subject"> </label>
+            <label for="body">Body: <textarea id="body" name="text_message"></textarea> </label>
             <button type="submit">Send</button>
-
         </form>
 
 </body>
