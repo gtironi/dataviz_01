@@ -10,9 +10,8 @@ body {
     and use the OS’s UI font as the website font
     */
     font: 100%/1.5 system-ui;
-    font-family: Arial, sans-serif;
     max-width: 100ch;
-    margin-inline: max(1em, (100% - 100ch) / 2);
+    margin-inline: auto; /* step 1 */
     padding: 1cm;
 }
 
@@ -47,7 +46,7 @@ nav a:hover {
     background-color: var(--color-accent-opac);
 }
 
-h2 {
+h2_resume {
     background-color: #333;
     color: white;
     padding: 10px;
