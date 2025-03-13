@@ -14,9 +14,9 @@ const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
 let pages = [
     {url: "", title: "Home"},
-    {url: "./projects/", title: "Projects"},
-    {url: "./resume/", title: "Resume"},
-    {url: "./contact/", title: "Contact"},
+    {url: "projects/", title: "Projects"},
+    {url: "resume/", title: "Resume"},
+    {url: "contact/", title: "Contact"},
     {url: "https://github.com/gtironi/dataviz_01", title: "GitHub"}
 ];
 
@@ -31,12 +31,13 @@ for (let p of pages) {
         url = "../" + url;
     }
     let a = document.createElement("a");
-    a.href = url;
-    a.textContent = title;
 
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add("current");
     } 
+
+    a.href = url;
+    a.textContent = title;
 
     if (a.host != location.host) {
         a.target = "_blank"
